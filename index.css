@@ -1,0 +1,126 @@
+#div1{
+    display: flex;
+}
+#div11{
+    background-color:rgb(163, 244, 163);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 180px;
+
+}
+#div12{
+    background-color: rgb(163, 244, 163);
+    margin-left: 300px;
+    margin-top: 20px;
+}
+#div12 a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    padding: 14px;
+    display: block;
+}
+#div12 ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+#div12 li{
+    float: left;
+}
+#div12 a:hover{
+color: purple;
+background-color: hotpink;
+}
+#div12 a:active{
+color: blue;
+background-color: lightblue;
+}
+#div2{
+    background-color: rgb(163, 244, 163);
+    display: flex;
+}
+#div21{
+    margin-left: 50px;
+    font-size: 20px;
+}
+#div21 a{
+    text-decoration: none;
+    font-size: 20px;
+}
+#div22{
+    margin-left: 140px;
+    width: 65%;
+}
+#div22 a{
+    text-decoration: none;
+    color: red;
+}
+#div221{
+    font-size: 20px;
+}
+#div222{
+    font-size: 20px;
+}
+#div223{
+    font-size: 20px;
+}
+#div224{
+    font-size: 20px;
+}
+#div225{
+    font-size: 20px;
+}
+#div226{
+    font-size: 20px;
+}
+#div227{
+    font-size: 20px;
+}
+#footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left:20px ;
+    background-color: black;
+    color: white;
+    padding: 18px;
+    text-align: center;
+}
+#divlast{
+    display: flex;
+    background-color: beige;
+    padding: 50px;
+}
+#divlast1{
+    margin-left: 300px;
+    margin-right: 100px;
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+}
+#divlast1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#divlast2{
+    margin-left: 100px;
+    margin-right: 100px;
+    color: black;
+    font-size: 20px;
+}
+#divlast2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#divlast3{
+    margin-left: 100px;
+}
+body{
+    background-color: rgb(164, 246, 164);
+}

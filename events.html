@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <style>
+        fieldset{
+            border:2px solid antiquewhite;
+            border-radius: 40px;
+            background-color: antiquewhite;
+            width:50px;
+            margin: auto;
+            border-width: 10px;
+            box-shadow: -10px -10px 60px;
+            /* transition: all 0.3s ease,box-shadow 0.3s; */
+            transition: transform 0.3s , box-shadow 0.3s;
+        }
+        fieldset:hover{
+            transform: translateY(20px)
+        }
+        
+        body{
+            background-color: antiquewhite;
+        }
+        #rh1{
+            margin: auto;
+        }
+        #submit:hover{
+            background-color: green;
+        }
+        #reset:hover{
+            background-color: blue;
+        }
+        #name:hover{
+            background-color: aqua;
+        }
+        #email:hover{
+            background-color: aquamarine;
+        }
+        #country:hover{
+            background-color: blueviolet;
+        }
+        #number:hover{
+            background-color: cadetblue;
+        }
+        #about:hover{
+            background-color: pink;
+        }
+        #date:hover{
+            background-color: cornflowerblue;
+        }
+        #choose:hover{
+            background-color: darkseagreen;
+        }
+        #about{
+            border-radius: 5px;
+        }
+        #name{
+            
+            border-radius: 3px;
+            width:250px;
+        }
+        #email{
+            
+            border-radius: 3px;
+            width:250px;
+        }
+        #number{
+            
+            border-radius: 3px;
+            width:250px;
+        }
+        
+        #date{
+            border-radius: 3px;
+            width:250px;
+            
+        }
+        #country{
+            width:250px;
+            
+        }
+        #submit{
+            width:150px;
+        }
+        #reset{
+            width:150px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function data()
+        {
+            var a=document.getElementById("name").value;
+            var b=document.getElementById("email").value;
+            var c=document.getElementById("number").value;
+            var d=document.getElementById("gender").value;
+            // if field is empty to show the error
+            if(a==""|| b==""|| c==""|| d=="")
+            {
+                alert("All fields are mendatory");
+                return false;
+            }
+            // contact number of 10 digits
+            else if(c.length<10||c.length>10)
+            {
+                alert("number should be of 10 digits only! please enter valid number")
+                return false;
+            }
+            // number is not a number
+            else if(isNaN(c))
+            {
+                alert("only numbers allowed! please enter valid number")
+                return false;
+            }
+            
+            else{
+                // alert("you have submitted the form !")
+                //  return true;
+                true
+            }
+        }
+    </script>
+        <form onsubmit="return data()" action="paragraph.html">
+        <h1 id="rh1"><marquee><i>Registration Form For Pollinator's Protection:</i></marquee></h1>
+        <fieldset>
+            
+
+
+
+            <label for="name"><b>Name:</b></label><br>
+            <input type="text" id="name" placeholder="name" name="myname"><br><br>
+            <label for="email"><b>Email:</b></label><br>
+            <input type="email" name="myemail" id="email" placeholder="email" required><br><br>
+            <label for="number"><b>Number:</b></label> <br>
+            <input type="number" name="mynumber" id="number" placeholder="number" required><br><br>
+            <b>Gender:</b> <br>
+            <b>Male</b><input type="radio" id="gender" name="mygender">
+           <b>Female</b><input type="radio" id="gender" name="mygender">
+            <b>other</b><input type="radio" name="mygender" id="gender" required><br><br>
+            <label for="country"><b>Country:</b></label><br>
+            <select id="country">
+                <option>select</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Russia</option>
+                <option>Thiland</option></select><br><br>
+                <input type="file" id="choose" name="myfile"><br><br>
+
+
+                <b>About Yourself:/Your Works:</b><br>
+                <textarea name="mytext"  id="about" rows="5" cols="50"></textarea><br><br>
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="mydate"><br><br>
+            
+                <input type="submit" id="submit" value="submit now">&nbsp;&nbsp;
+                <input type="reset"  id="reset" value="Reset Form">
+            </select>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
